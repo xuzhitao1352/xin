@@ -4,25 +4,19 @@
 
 ## GitHub：https://github.com/waitfor0311/xin.git
 
-> 组长：司明星 
->
-> 请将代码提交到每个人的分支：
+###组长：司明星 
 
-个人分支：
+| Name   | Branch | GitHub ID       |
+| ------ | ------ | --------------- |
+| 左金城 | zjc    | zuojincheng1983 |
+| 樊文瑞 | fwr    | m15035689636    |
+| 杨伯泽 | ybz    | xinjiuxin       |
+| 化飞龙 | hfl    | xinyeya         |
+| 米　杨 | my     |                 |
+| 刘　明 | lm     |                 |
+| 许志涛 | xzt    | xuzhitao1352    |
 
-左金城	分支：zjc	git帐号：zuojincheng1983
-
-樊文瑞	分支：fwr	git帐号：m15035689636
-
-杨伯泽	分支：ybz	git帐号：xinjiuxin
-
-化飞龙	分支：hfl	git帐号：xinyeya
-
-米　杨	分支：my	git帐号：
-
-刘　明	分支：lm	git帐号：
-
-许志涛	分支：xzt	git帐号：xuzhitao1352
+**请将代码提交到每个人的分支**
 
 ---
 
