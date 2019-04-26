@@ -1,12 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
+	<!-- <script src="./js/jquery-3.3.1.min.js"></script> -->
+	<script src="dist/js/swiper.min.js"></script>
+	<script src="./js/zhuye/index.js"></script>
 </head>
+
 <body>
-   <p>redtrfcyuvghbi</p> 
+	<div class="w">
+		<!-- 轮播图S -->
+		<div class="swiper">
+			<div class="swiper-left">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./images/nav_01.jpg" alt="" srcset="">
+						</div>
+						<div class="swiper-slide"><img src="./images/nav_02.jpg" alt="" srcset=""></div>
+						<div class="swiper-slide"><img src="./images/nav_03.jpg" alt="" srcset=""></div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- 导航等组件可以放在container之外 -->
+			</div>
+			<div class="swiper-right">
+				<div class="swiper-container">
+					<div class="swiper-slide">
+						<div class="swiper-right-box">
+							<div class="swiper-right-top">
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+							</div>
+							<div class="swiper-right-bottom">
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+								<div class="item">
+									<img src="./images/nav_right.jpg" alt="" srcset="">
+									<span>失去并不代表失败</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- 导航等组件可以放在container之外 -->
+			</div>
+		</div>
+		<!-- 轮播图E -->
+		<!-- 推广S -->
+		<div class="generalize">
+			<div class="generalize-top">
+				<div class="generalize-top-left">
+					<img src="./images/logo.png" alt="" srcset="">
+					<span>推广</span>
+				</div>
+				<div class="generalize-top-right">
+					<span><a>在线人数：3675388</a></span>
+					|
+					<span><a>最新投稿：1456</a></span>
+				</div>
+			</div>
+			<div class="generalize-bottom">
+				<div class="generalize-bottom-left">
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+				</div>
+				<div class="generalize-bottom-right">
+					<img src="./images/generalize-right.jpg" alt="" srcset="">
+				</div>
+			</div>
+		</div>
+		<!-- 推广E -->
+		<!-- 测试S -->
+		<div class="demo">
+			<img src="./images/demo.jpg" alt="" srcset="">
+		</div>
+		<!-- 测试E -->
+
+		<!-- 正在直播S -->
+		<div class="zhibo">
+			<div class="zhibo-title">
+				<div class="zhibo-title-left">
+					<div class="zhibo-title-left-zhibo">
+						<img src="./images/logo.png" alt="" srcset="">
+						<span>正在直播</span>
+					</div>
+					<div class="zhibo-title-left-zaixian">
+						<div>
+							当前共有<span>6504</span>在线直播
+						</div>
+					</div>
+					<div class="zhibo-title-left-zhexie">
+						<span class="glyphicon glyphicon-heart"></span>
+						233秒居然能做这些
+					</div>
+					<div class="zhibo-title-left-gengduo">
+						更多<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+				<div class="zhibo-title-right">
+					<span>直播排行</span>
+					<span>关注的主播</span>
+					<span>为你推荐</span>
+				</div>
+			</div>
+			<div class="zhibo-body">
+				<div class="zhibo-body-left">
+					<div class="swiper-right-box">
+						<div class="swiper-right-top">
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+						</div>
+						<div class="swiper-right-bottom">
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="zhibo-body-right">
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 正在直播E -->
+		
+	</div>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+
+			autoplay: 2000,
+
+			loop: true,
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+
+			// 如果需要前进后退按钮
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+
+			// 如果需要滚动条
+			scrollbar: '.swiper-scrollbar',
+		})        
+	</script>
 </body>
+
 </html>
