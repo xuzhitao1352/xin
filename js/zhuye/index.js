@@ -135,31 +135,35 @@ for(var i = 0;i<tj.length;i++){
 }
 
 //侧边栏鼠标交互(弹出盒子)
+function tanchu(that,div){
+    //弹出盒子
+    var h = that.offsetHeight;
+    div.className = "active";
+    div.style.bottom = (h+2)+"px";
+    // 盒子内容
+    div.innerHTML = `
+    <h6>《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴</h6>
+    <p><span class = "left">用户名</span><span class="line">|</span><span class = "right">2019-05-05 19:00</span></p>
+    <em class="hr"></em>
+    <div class="content">
+        <img src="./images/cebianlan.webp" >
+        <span>这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐，鸣人受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有依鲁卡老师关心</span>
+    </div>
+    <em class="hr"></em>
+    <p><span class="glyphicon glyphicon-play-circle"></span>71.5万<span class="glyphicon glyphicon-list-alt"></span>6650<span class="glyphicon glyphicon-star-empty"></span>1.6万<span class="glyphicon glyphicon-download"></span>2.2万</p>
+    `;
+    that.append(div);
+    //文字样式
+    var tit = that.children[1];
+    tit.style.color = "skyblue";
+    
+};
 var rbox = document.querySelectorAll(".donghua-body-right >.donghua-body-right-quanbu:not(:first-child)");
 for(var i = 0;i<rbox.length;i++){
-
     rbox[i].addEventListener("mouseenter",function(){
         //弹出盒子
         var div = document.createElement("div");
-        var h = this.offsetHeight;
-        div.className = "active";
-        div.style.bottom = (h+2)+"px";
-        // 盒子内容
-        div.innerHTML = `
-        <h6>《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴</h6>
-        <p><span class = "left">用户名</span><span class="line">|</span><span class = "right">2019-05-05 19:00</span></p>
-        <em class="hr"></em>
-        <div class="content">
-            <img src="./images/cebianlan.webp" >
-            <span>这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐，鸣人受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有依鲁卡老师关心</span>
-        </div>
-        <em class="hr"></em>
-        <p><span class="glyphicon glyphicon-play-circle"></span>71.5万<span class="glyphicon glyphicon-list-alt"></span>6650<span class="glyphicon glyphicon-star-empty"></span>1.6万<span class="glyphicon glyphicon-download"></span>2.2万</p>
-        `;
-        this.append(div);
-        //文字样式
-        var tit = this.children[1];
-        tit.style.color = "skyblue";
+        tanchu(this,div);
         var that = this;
         div.addEventListener("mouseenter",function(){
             var tit = that.children[1];
@@ -167,25 +171,12 @@ for(var i = 0;i<rbox.length;i++){
             that.removeChild(this);
         });
     });
-
-    // rbox[i].onmouseenter = function(){
-    //     var div = document.createElement("div");
-    //     div.className = "active";
-    //     this.append(div);
-    // }
-
     rbox[i].addEventListener("mouseleave",function(){
         var tit = this.children[1];
         tit.style.color = "";
-        var div = this.children[2]; 
+        var div = this.children[2];
         this.removeChild(div);
     });
-
-    // rbox[i].onmouseleave = function(){
-    //     var div = this.children.querySelector("active");
-    //     log(div);
-    //     this.removeChild(div);
-    // }
 }
 
 //右盒子(给标题第一个设置弹出盒子)
@@ -209,24 +200,7 @@ for(var i =0;i<rbox_f.length;i++){
         i.style.top = (h-iwh-1)+"px";
         //弹出盒子
         var div = document.createElement("div");
-        var h = this.offsetHeight;
-        div.className = "active";
-        div.style.bottom = (h+2)+"px";
-        // 盒子内容
-        div.innerHTML = `
-        <h6>《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴</h6>
-        <p><span class = "left">用户名</span><span class="line">|</span><span class = "right">2019-05-05 19:00</span></p>
-        <em class="hr"></em>
-        <div class="content">
-            <img src="./images/cebianlan.webp" >
-            <span>这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐，鸣人受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有依鲁卡老师关心</span>
-        </div>
-        <em class="hr"></em>
-        <p><span class="glyphicon glyphicon-play-circle"></span>71.5万<span class="glyphicon glyphicon-list-alt"></span>6650<span class="glyphicon glyphicon-star-empty"></span>1.6万<span class="glyphicon glyphicon-download"></span>2.2万</p>
-        `;
-        this.append(div);
-        var tit = this.children[2].children[0];
-        tit.style.color = "skyblue";
+        tanchu(this,div);
         var that = this;
         div.addEventListener("mouseenter",function(){
             var tit = that.children[2].children[0];
